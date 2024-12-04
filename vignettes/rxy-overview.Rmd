@@ -1,0 +1,53 @@
+---
+title: "ryx-overview"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ryx-overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+The `ryx` package simplifies correlation analysis by providing tools to calculate and visualize correlations between a target variable and multiple predictors.
+
+## Installation
+To install the development version of `ryx`, use:
+```{r}
+#devtools::install_github("braeden-falzarano/ryx")
+```
+
+
+## Example Usage
+Here’s a quick guide to using ryx:
+```{r}
+library(ryx)
+library(MASS)
+
+# Perform correlation analysis
+x <- ryx(Boston, y = "medv")
+
+# Print results
+print(x)
+
+# Summary of results
+summary(x)
+
+# Plot results
+plot(x)
+```
+
+## Details
+The ryx function calculates Pearson correlations and arranges them in a data frame. The summary method provides a statistical overview, and the plot method visualizes the results.
+
+## Conclusion
+The ryx package streamlines correlation analysis, making it quick and easy to generate insights.
+
+
+

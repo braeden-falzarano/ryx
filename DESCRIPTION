@@ -1,0 +1,26 @@
+Package: ryx
+Title: Correlation Analysis Made Easy
+Version: 0.1.0.0000
+Authors@R: 
+    person("Braeden", "Falzarano", , "bfalzarano@wesleyan.edu", role = c("aut", "cre"))
+Description: Provides functions to calculate correlations of a target variable 
+    with multiple predictor variables and includes features for analysis, 
+    visualization, and reporting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+Depends: 
+    R (>= 3.5.0)
+Imports:
+    ggplot2,
+    stats,
+    MASS,
+    dplyr
+VignetteBuilder: knitr
+
+
+
